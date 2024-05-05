@@ -53,7 +53,7 @@ Resources:
               - !Join
                 - ''
                 - - 'arn:aws:s3:::'
-                  - !Ref RecordServiceS3Bucket
+                  - !Ref S3Bucket
           - Action:
               - 's3:GetObjectVersion'
               - 's3:GetObjectVersionAcl'
@@ -62,7 +62,7 @@ Resources:
               - !Join
                 - ''
                 - - 'arn:aws:s3:::'
-                  - !Ref RecordServiceS3Bucket
+                  - !Ref S3Bucket
                   - /*
           - Action:
               - 's3:ReplicateObject'
