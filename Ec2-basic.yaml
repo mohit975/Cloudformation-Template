@@ -1,0 +1,14 @@
+Parameters:
+  InstanceType: 
+    type: string
+
+  ImageId: 
+    type: string
+
+Resources:
+  MyEC2Instance: 
+    Type: AWS::EC2::Instance
+    Properties: 
+      InstanceType: !Ref InstanceType
+      ImageId: !Ref ImageId
+
