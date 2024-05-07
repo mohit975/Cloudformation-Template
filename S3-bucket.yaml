@@ -1,5 +1,5 @@
 Parameters:
-  bucket-Name: 
+  bucketName: 
     type: string
 
 
